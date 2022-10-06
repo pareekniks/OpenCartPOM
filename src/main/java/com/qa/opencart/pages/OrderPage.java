@@ -7,4 +7,10 @@ import com.qa.opencart.util.ElementUtil;
 public class OrderPage {
 	private WebDriver driver;
 	private ElementUtil eleUtil;
+	public OrderPage(WebDriver driver) {
+		this.driver = driver;
+		eleUtil =new ElementUtil(driver);
+	}
+	
+	
 }
