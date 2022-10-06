@@ -11,6 +11,12 @@ public class OrderPage {
 		this.driver = driver;
 		eleUtil =new ElementUtil(driver);
 	}
+	public void demo() {
+		System.out.println("Demo");
+	}
+	
+	
+	
 	
 	
 }
