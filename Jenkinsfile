@@ -19,7 +19,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/pareekniks/OpenCartPOM.git'
-                    sh "mvn clean install"
+                    sh 'mvn clean install'
                     
                 }
             }
