@@ -18,7 +18,7 @@ pipeline
         stage('Regression Automation Test') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    git 'https://github.com/pareekniks/OpenCartPOM.git'
+                   git branch: 'main', url: 'https://github.com/pareekniks/OpenCartPOM'
                     sh "mvn clean install"
                     
                 }
